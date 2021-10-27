@@ -1,0 +1,19 @@
+{
+  "configurations": [
+    {
+      "type": "aws-sam",
+      "request": "direct-invoke",
+      "name": "app:app (go1.x)",
+      "invokeTarget": {
+        "target": "code",
+        "projectRoot": "${workspaceFolder}/app",
+        "lambdaHandler": "app"
+      },
+      "lambda": {
+        "runtime": "go1.x",
+        "payload": {},
+        "environmentVariables": {}
+      }
+    }
+  ]
+}
